@@ -10,7 +10,15 @@ home.controller('home',
               console.log("clicked");
           });
       };
-    
+
 
     }
 )
+
+// home.config(['$routeProvider','$locationProvider', function($routeProvider,$locationProvider){
+//   $routeProvider.when('/HIS/patient',{templateUrl: 'views/index.html'});
+//   $routeProvider.otherwise({redirectTo: '/'});
+//
+//   $locationProvider.html5Mode({enabled: true, requireBase: false});
+
+//}])

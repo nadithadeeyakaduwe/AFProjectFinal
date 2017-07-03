@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="style.css" tyoe="text/css ">
 
 </head>
-<body>
+<body ng-app="homeModule">
 <div class="container" ng-controller="home">
-<a href="views/Patientlist.html"><button class="btn btn-warning" ng-click="refresh()">ADD PATIENT INTERFACE</button></a>
+ <a href="views/Patientlist.html">
+  <button class="btn btn-warning" ng-click="refresh()">ADD PATIENT INTERFACE</button>
+</a>
 
-<div ng-view>div for view</div>
+<ng-view></ng-view>
 
 
 
@@ -22,6 +24,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
   <script src="https://code.angularjs.org/1.4.5/angular-route.js"></script>
 
   <script src="./views/Controller/homeController.js"></script>
